@@ -8,7 +8,7 @@ object BindingAdapter {
     @BindingAdapter("arItemToString")
     @JvmStatic
     fun arItemToStringBis(textView: TextView, arItems: ArrayList<EtuItem>) {
-        var stringBuilder = StringBuilder()
+        val stringBuilder = StringBuilder()
         arItems?.forEach {(item) ->
             stringBuilder.append("-> $item\n")
         }
