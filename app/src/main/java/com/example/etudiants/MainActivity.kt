@@ -2,10 +2,13 @@ package com.example.etudiants
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import com.example.etudiants.databinding.ActivityMainBinding
+import com.example.etudiants.retrofit.Api_Retroit
 import com.example.etudiants.view_model.EtuViewModel
+
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding : ActivityMainBinding
@@ -20,4 +23,6 @@ class MainActivity : AppCompatActivity() {
         binding.liveData = viewModel
         viewModel.initData()
     }
+
+
 }
